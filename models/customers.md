@@ -7,6 +7,6 @@ One record per customer.
 **bold** _italic_
 
 |table|
-|~~~~~|
+|-----|
 |description|
 {% enddocs %}
