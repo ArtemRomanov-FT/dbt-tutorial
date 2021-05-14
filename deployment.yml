@@ -1,13 +1,13 @@
 jobs:
-  name: daytime
-  schedule: 0 12 * * *
+  - name: daytime
+    schedule: 0 12 * * *
   steps: 
-    name: run models
-    command: dvt run
-    name: test models
-    command: dbr test
-  name: nightly
-  schedule: 0 0 * * *
-  steps:
-    name: run models
-    command: dbt run
+    - name: run models
+      command: dvt run
+    - name: test models
+      command: dbr test
+  - name: nightly
+    schedule: 0 0 * * *
+    steps:
+      - name: run models
+      command: dbt run
